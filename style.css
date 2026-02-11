@@ -26,6 +26,10 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     width: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -36,6 +40,8 @@ body {
     overflow-x: hidden;
     width: 100%;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -84,6 +90,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
@@ -158,6 +165,8 @@ body {
     justify-content: center;
     position: relative;
     padding: 100px 20px 50px;
+    width: 100%;
+    max-width: 100vw;
 }
 
 .hero-content {
@@ -382,6 +391,9 @@ body {
 section {
     padding: 100px 20px;
     position: relative;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .section-title {
@@ -1169,6 +1181,7 @@ img {
         padding: 2rem 0;
         gap: 0;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        z-index: 999;
     }
 
     .nav-menu.active {
@@ -1215,6 +1228,11 @@ img {
     .hero-buttons .btn {
         width: 100%;
         justify-content: center;
+        text-align: center;
+    }
+    
+    .hero-content {
+        gap: 2rem;
     }
 
     .stats-grid {
@@ -1251,6 +1269,15 @@ img {
     
     .nav-container {
         padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 80px 15px 30px;
+        min-height: 100svh;
+    }
+    
+    section {
+        padding: 50px 15px;
     }
     
     .logo {
